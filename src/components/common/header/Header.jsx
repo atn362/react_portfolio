@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from '../../common';
+// import Logo from '';
 
 import './Header.css';
 
@@ -9,7 +10,6 @@ function Header () {
         <section className="header">
             <section className="header-logo">
                     Alexander Todd Norton
-                    
                     </section>
                     <div className="navbar">
                     <Navbar/>
