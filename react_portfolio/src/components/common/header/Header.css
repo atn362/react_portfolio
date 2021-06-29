@@ -1,0 +1,35 @@
+.header{
+  width: 100%;
+  height: 25vh;
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+}
+
+.header-logo{
+  padding: 15px;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar{
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.links{
+  padding: 10px;
+  margin: 5px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a{
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
