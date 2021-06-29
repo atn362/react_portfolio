@@ -1,27 +1,25 @@
-import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from './components/Home'
 import About from './components/About';
-import Logo from './logo.jpg';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 import './App.css';
 
 function App() {
   return (
-      <section className="header">
-        <section className="header-logo">
-          Alexander Todd Norton
-          <img className="logo" src={Logo} alt="logo" />
-        </section>
-        <div className="navbar"></div>
-        <div className="links">
+
           <BrowserRouter>
             <Switch className="links">
-              <Route components={About} path="/about">About</Route>
+              <Route components={Home} path="/" exact/>
+              <Route components={About} path="/about"/>
+              <Route components={Portfolio} path="/portfolio"/>
+              <Route components={Contact} path="/contact"/>
+              <Route components={Resume} path="/resume"/>
             </Switch>
           </BrowserRouter>
-        </div>
-      </section>
-    );
-  }
+  )
+}
 
 export default App;

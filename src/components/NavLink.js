@@ -3,26 +3,26 @@ import {NavLink} from 'react-router-dom';
 
 export default function NavBar() {
     return (
-        <header>
-            <div>
+
+            <div className="header">
                 <nav>
-                    <NavLink>
+                    <NavLink to="/" exact>
                         Alexande Norton
                     </NavLink>
-                    <NavLink>
+                    <NavLink to="/about">
                        About Me
                     </NavLink>
-                    <NavLink>
+                    <NavLink to="/portfolio">
                         Portfolio
                     </NavLink>
-                    <NavLink>
+                    <NavLink to="/contact">
                         Contact
                     </NavLink>
-                    <NavLink>
+                    <NavLink to="resume">
                         Resume
                     </NavLink>
                 </nav>
             </div>
-        </header>
+
     )
 }
