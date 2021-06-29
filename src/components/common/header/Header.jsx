@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from '../../common';
-// import Logo from '';
+import Logo from './logo.jpg';
 
 import './Header.css';
 
@@ -10,6 +10,7 @@ function Header () {
         <section className="header">
             <section className="header-logo">
                     Alexander Todd Norton
+                    <img className="logo" src={Logo} alt="logo"/>
                     </section>
                     <div className="navbar">
                     <Navbar/>
